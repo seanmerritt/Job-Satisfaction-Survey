@@ -1,0 +1,764 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      CODEBOOK
+
+
+                General Social Survey Cumulative Datafile 1972-2012
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page i
+
+
+                                      CONTENTS
+
+
+      item                                                                page
+
+      CASEID             CASE IDENTIFICATION NUMBER                          1
+      WKVSFAM            HOW OFTEN JOB INTERFERES FAM LIFE                   1
+      HRSRELAX           HOURS PER DAY R HAVE TO RELAX                       1
+      LEARNNEW           JOB REQUIRES R TO LEARN NEW THINGS                  2
+      WORKFAST           JOB REQUIRES R TO WORK FAST                         2
+      WORKDIFF           R DOES NUMEROUS THINGS ON JOB                       3
+      LOTOFSAY           R HAS LOT OF SAY IN JOB                             3
+      WKTOPSAT           SATISFACTION COMES FROM WORK                        4
+      KNOWWHAT           R KNOWS WHAT'S EXPECTED ON JOB                      4
+      MYSKILLS           JOB ALLOWS R USE OF SKILLS                          5
+      RESPECT            R TREATED WITH RESPECT AT WORK                      5
+      TRUSTMAN           R TRUST MANAGEMENT AT WORK                          6
+      SAFETYWK           WORKER SAFETY PRIORITY AT WORK                      6
+      WKDECIDE           HOW OFTEN R TAKE PART IN DECISIONS                  7
+      SETTHNGS           HOW OFTEN R SET WAY THINGS DONE                     7
+      PROMTEOK           RS CHANCES FOR PROMOTION GOOD                       8
+      WKFREEDM           A LOT OF FREEDOM TO DECIDE HOW TO DO JOB            8
+      JOBSECOK           THE JOB SECURITY IS GOOD                            9
+      TRAINOPS           R HAVE THE TRAINING OPPORTUNITIES                   9
+      WKPRAISE           R IS LIKELY TO BE PRAISED BY SUPERVISOR            10
+      FAIREARN           HOW FAIR IS WHAT R EARN ON THE JOB                 10
+      HEALTH1            RS HEALTH IN GENERAL                               11
+      SATJOB1            JOB SATISFACTION IN GENERAL                        11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page 1
+
+
+      CASEID             CASE IDENTIFICATION NUMBER
+
+           Data type: numeric
+           Record/columns: 1/1-5
+
+      ________________________________________________________________________
+
+      WKVSFAM            HOW OFTEN JOB INTERFERES FAM LIFE
+
+           882. How often do the demands of your job interfere with your
+           family life?
+
+           VALUE  LABEL
+               0  IAP
+               1  Often
+               2  Sometimes
+               3  Rarely
+               4  Never
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/7
+
+      ________________________________________________________________________
+
+      HRSRELAX           HOURS PER DAY R HAVE TO RELAX
+
+           884. After an average work day, about how many hours do you have
+           to relax or pursue activities that you enjoy?
+
+           VALUE  LABEL
+              -1  IAP
+              98  DONT KNOW
+              99  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: -1,98,99
+           Record/columns: 1/9-10
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page 2
+
+
+      LEARNNEW           JOB REQUIRES R TO LEARN NEW THINGS
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. a. My job requires that I keep learning new
+           things
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/12
+
+      ________________________________________________________________________
+
+      WORKFAST           JOB REQUIRES R TO WORK FAST
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. b. My job requires that I work very fast.
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/14
+
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page 3
+
+
+      WORKDIFF           R DOES NUMEROUS THINGS ON JOB
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. c. I get to do a number of different things
+           on my job.
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/16
+
+      ________________________________________________________________________
+
+      LOTOFSAY           R HAS LOT OF SAY IN JOB
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. d. I have a lot of say about what happens
+           on my job.
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/18
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page 4
+
+
+      WKTOPSAT           SATISFACTION COMES FROM WORK
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. e. My main satisfaction in life comes from
+           work
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/20
+
+      ________________________________________________________________________
+
+      KNOWWHAT           R KNOWS WHAT'S EXPECTED ON JOB
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. g. On my job, I know exactly what is
+           expected of me.
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/22
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page 5
+
+
+      MYSKILLS           JOB ALLOWS R USE OF SKILLS
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. h. My job lets me use my skills and
+           abilities.
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/24
+
+      ________________________________________________________________________
+
+      RESPECT            R TREATED WITH RESPECT AT WORK
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. i. At the place where I work, I am treated
+           with respect.
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/26
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page 6
+
+
+      TRUSTMAN           R TRUST MANAGEMENT AT WORK
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. j. I trust the management at the place
+           where I work.
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/28
+
+      ________________________________________________________________________
+
+      SAFETYWK           WORKER SAFETY PRIORITY AT WORK
+
+           886. Now I'm going to read you a list of statements that might
+           or might not describe your main job. Please tell me whether you
+           strongly agree, agree, disagree, or strongly disagree with each
+           of these statements. k. The safety of workers is a high priority
+           with management where I work
+
+           VALUE  LABEL
+               0  IAP
+               1  Strongly Agree
+               2  Agree
+               3  Disagree
+               4  Strongly Disagree
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/30
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page 7
+
+
+      WKDECIDE           HOW OFTEN R TAKE PART IN DECISIONS
+
+           888a. In your job, how often do you take part with others in
+           making decisions that affect you?
+
+           VALUE  LABEL
+               0  IAP
+               1  Often
+               2  Sometimes
+               3  Rarely
+               4  Never
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/32
+
+      ________________________________________________________________________
+
+      SETTHNGS           HOW OFTEN R SET WAY THINGS DONE
+
+           888b. How often do you participate with others in helping set
+           the way things are done on your job?
+
+           VALUE  LABEL
+               0  IAP
+               1  Often
+               2  Sometimes
+               3  Rarely
+               4  Never
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page 8
+
+
+      PROMTEOK           RS CHANCES FOR PROMOTION GOOD
+
+           889. Now I'm going to read you another list of statements about
+           your main job. For each, please tell me if the statement is very
+           true, somewhat true, not too true, or not at all true with
+           respect to the work you do. a. The chances for promotion are
+           good
+
+           VALUE  LABEL
+               0  IAP
+               1  Very true
+               2  Somewhat true
+               3  Not too true
+               4  Not at all true
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/36
+
+      ________________________________________________________________________
+
+      WKFREEDM           A LOT OF FREEDOM TO DECIDE HOW TO DO JOB
+
+           889. Now I'm going to read you another list of statements about
+           your main job. For each, please tell me if the statement is very
+           true, somewhat true, not too true, or not at all true with
+           respect to the work you do. e. I am given a lot of freedom to
+           decide how to do my own work
+
+           VALUE  LABEL
+               0  IAP
+               1  Very true
+               2  Somewhat true
+               3  Not too true
+               4  Not at all true
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/38
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012               Page 9
+
+
+      JOBSECOK           THE JOB SECURITY IS GOOD
+
+           889. Now I'm going to read you another list of statements about
+           your main job. For each, please tell me if the statement is very
+           true, somewhat true, not too true, or not at all true with
+           respect to the work you do. k. The job security is good
+
+           VALUE  LABEL
+               0  IAP
+               1  Very true
+               2  Somewhat true
+               3  Not too true
+               4  Not at all true
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/40
+
+      ________________________________________________________________________
+
+      TRAINOPS           R HAVE THE TRAINING OPPORTUNITIES
+
+           889. Now I'm going to read you another list of statements about
+           your main job. For each, please tell me if the statement is very
+           true, somewhat true, not too true, or not at all true with
+           respect to the work you do. o. I have the training opportunities
+           I need to perform my job safely and competently
+
+           VALUE  LABEL
+               0  IAP
+               1  Very true
+               2  Somewhat true
+               3  Not too true
+               4  Not at all true
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/42
+
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012              Page 10
+
+
+      WKPRAISE           R IS LIKELY TO BE PRAISED BY SUPERVISOR
+
+           893. When you do your job well, are you likely to be praised by
+           your supervisor or employer?
+
+           VALUE  LABEL
+               0  IAP
+               1  Yes
+               2  Maybe
+               3  No
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/44
+
+      ________________________________________________________________________
+
+      FAIREARN           HOW FAIR IS WHAT R EARN ON THE JOB
+
+           895. How fair is what you earn on your job in comparison to
+           others doing the same type of work you do?
+
+           VALUE  LABEL
+               0  IAP
+               1  Much less than you deserve
+               2  Somewhat less than you deserve
+               3  About as much as you deserve
+               4  Somewhat more than you deserve
+               5  Much more than you deserve
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/46
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
+
+
+
+      General Social Survey Cumulative Datafile 1972-2012              Page 11
+
+
+      HEALTH1            RS HEALTH IN GENERAL
+
+           905. Would you say that in general your health is Excellent,
+           Very good, Good, Fair, or Poor?
+
+           VALUE  LABEL
+               0  IAP
+               1  Excellent
+               2  Very good
+               3  Good
+               4  Fair
+               5  Poor
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/48
+
+      ________________________________________________________________________
+
+      SATJOB1            JOB SATISFACTION IN GENERAL
+
+           913. All in all, how satisfied would you say you are with your
+           job?
+
+           VALUE  LABEL
+               0  IAP
+               1  Very satisfied
+               2  Somewhat satisfied
+               3  Not too satisfied
+               4  Not at all satisfied
+               8  DONT KNOW
+               9  NO ANSWER
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   April 8, 2019
