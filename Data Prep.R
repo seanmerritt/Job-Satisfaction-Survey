@@ -1,4 +1,4 @@
-pacman::p_load(tidyverse, car, mosiac, skimr, psycho, psych, nfactors, factanal())
+pacman::p_load(tidyverse, car, mosiac, skimr, psycho, psych, nfactors, factanal)
 
 WorkSatisfaction <- read_csv("Data/WorkSatisfaction.txt")
 
@@ -17,13 +17,15 @@ dat <- dat %>%
 
 EF <- dat[,-c(1,8,23,24)]
 
-EFEwrite_csv(dat, "dat.csv")
+dat <- dat[,-c(1,8,23)]
+
+write_csv(dat, "dat.csv")
 
 ## Standardize with z-scores
-Std_score <- dat %>% 
+Std_score <- dat[,-21] %>% 
   standardize()
 
 write_csv(Std_score, "Std_score.csv")
 
-
-
+x <- model.matrix(satisfaction~., data = dat)[,-1]
+y <- dat$satisfaction
