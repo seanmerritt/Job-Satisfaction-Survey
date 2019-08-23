@@ -1,16 +1,23 @@
-pacman::p_load(tidyverse, car, mosiac, skimr, psycho, psych, nFactors, factanal, FactoMineR)
+pacman::p_load(tidyverse, psycho)
 
 WorkSatisfaction <- read_csv("Data/WorkSatisfaction.txt")
-sub.dat <- WorkSatisfaction
+sub.data <- WorkSatisfaction
 ## Filter Dat set
 n <- 23
 for(i in 1:n){
   if(i > 1){
-  sub.data <- sub.data %>% 
-    filter(sub.data[,i] > 0, sub.data[,i] <=5)}
+    if(colnames(sub.data[,i]) != "HRSRELAX"){
+      sub.data <- sub.data %>% 
+        filter(sub.data[,i] > 0, sub.data[,i] <= 5)
+    }
+    else{
+       sub.data <- sub.data %>% 
+      filter(sub.data[,i] >= 0, sub.data[,i] <= 30)
+    }
 }
-  
+}
 
+## Recode the data
 sub.data$SATJOB1 <- recode(sub.data$SATJOB1, `4`= 0L, `3`= 1L, `2`= 2L, `1`= 3L)
 sub.data$WKTOPSAT <- recode(sub.data$WKTOPSAT, `4`= 0L, `3`= 1L, `2`= 2L, `1`= 3L)
 sub.data$TRAINOPS <- recode(sub.data$TRAINOPS, `4`= 0L, `3`= 1L, `2`= 2L, `1`= 3L)
@@ -29,22 +36,26 @@ sub.data$WKFREEDM <- recode(sub.data$WKFREEDM, `4`= 0L, `3`= 1L, `2`= 2L, `1`= 3
 sub.data$MYSKILLS <- recode(sub.data$MYSKILLS, `4`= 0L, `3`= 1L, `2`= 2L, `1`= 3L)
 sub.data$WKVSFAM <- recode(sub.data$WKVSFAM, `4`= 0L, `3`= 1L, `2`= 2L, `1`= 3L)
 sub.data$JOBSECOK <- recode(sub.data$JOBSECOK, `4`= 0L, `3`= 1L, `2`= 2L, `1`= 3L)
+sub.data$TRAINOPS <- recode(sub.data$TRAINOPS, `4`= 0L, `3`= 1L, `2`= 2L, `1`= 3L)
+sub.data$WKPRAISE <- recode(sub.data$WKPRAISE, `3`= 0L, `2`= 0L, `1` = 1L)
 sub.data$FAIREARN <- recode(sub.data$FAIREARN, `5`= 4L, `4`= 3L, `3`= 2L, `2`= 1L, `1` = 0L)
 
-dat <- dat %>% 
-  mutate(satisfaction = (SATJOB1 + WKTOPSAT)/2)
+## Create Satisfaction variable and filter contributors
 
-EF <- dat[,-c(1,8,23,24)]
+dat <- sub.data %>% 
+  mutate(satisfaction = (SATJOB1 + WKTOPSAT)/2) %>% 
+  dplyr::select(WKVSFAM:LOTOFSAY, KNOWWHAT:HEALTH1, satisfaction)
 
-dat <- dat[,-c(1,8,23)]
+## Create a predictors data set to use only predictors for EF, LASSO and Clusters
+Predictors <- dat %>% 
+  dplyr::select(-satisfaction)
 
-write_csv(dat, "dat.csv")
 
 ## Standardize with z-scores
-Std_score <- dat[,-21] %>% 
-  standardize()
+Std_score <- Predictors %>%
+  psycho::standardize()
 
 write_csv(Std_score, "Std_score.csv")
 
-x <- model.matrix(satisfaction~., data = dat)[,-1]
+x <- model.matrix(satisfaction~., data = dat)[,1]
 y <- dat$satisfaction

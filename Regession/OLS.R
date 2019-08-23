@@ -7,3 +7,8 @@ summary(trainlm)
 
 testlm <- lm(satisfaction~., test)
 summary(testlm)
+
+### Vizualize and test model with just significant
+
+dat %>% 
+  dplyr::select(WORKFAST, LOTOFSAY, MYSKILLS, TRUSTMAN, WKFREEDM, JOBSECOK, WKPRAISE, FAIREARN, satisfaction) 
