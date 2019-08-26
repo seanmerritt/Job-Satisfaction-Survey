@@ -5,7 +5,7 @@ ap <- parallel(subject = nrow(Predictors), var = ncol(Predictors), rep = 100, ce
 nS <- nScree(x=ev$values, aparallel=ap$eigen$qevpea)
 plotnScree(nS)
 
-## 5 suggested factors
+## 4 suggested factors
 fit <- factanal(EF, 4, rotation = "varimax")
 print(fit, digits=2, cutoff=.4, sort=TRUE)
 
@@ -50,3 +50,5 @@ EF_dat %>%
   labs(x = " Factor Score", y = "Satisfaction Score", title = "Work Factors and Life Satisfaction Scores")
   
 ggsave("Factor_LM.jpeg")
+
+## Comparing Factor Model and OLS model and find some better combination
