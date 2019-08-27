@@ -1,4 +1,5 @@
 pacman::p_load(caTools, tidyverse)
+source("r_square_viewer.r")
 set.seed(123)
 sample = sample.split(dat,SplitRatio = 0.70) # splits the data in the ratio mentioned in SplitRatio. After splitting marks these rows as logical TRUE and the the remaining are marked as logical FALSE
 train = subset(dat,sample ==TRUE) # creates a training dataset named train1 with rows which are marked as TRUE
@@ -56,5 +57,8 @@ summary(difference_lm)
 r %>% 
   ggplot(aes(y = difference, x = model))+
   geom_boxplot(fill = "purple", color = 'firebrick')+
-  theme_bw()
+  theme_bw()+
+labs(title = "comparing models")
+
+ggsave("ModelComparison.jpeg")
 

@@ -21,5 +21,5 @@ r_square_viewer <- function(data, model, iterations){
 
 }
 
-blah <- r_square_viewer(dat, satisfaction~. , 100)
+
 
